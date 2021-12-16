@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Flying in the Light",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/flying_in_the_light.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/flying_in_the_light.jpg"
+  },
+  {
+    "name": "Caterpillar",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/caterpillar.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/caterpillar.jpg"
+  },
+  {
+    "name": "Look Me in the Eye",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/look_me_in_the_eye.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/look_me_in_the_eye.jpg"
+  },
+  {
+    "name": "Flamingo",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/flamingo.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/flamingo.jpg"
+  },
+  {
+    "name": "Rainbow",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/rainbow.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/rainbow.jpg"
+  },
+  {
+    "name": "Over there",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/over_there.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/over_there.jpg"
+  },
+  {
+    "name": "Jelly Fish 2",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/jelly_fish_2.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/jelly_fish_2.jpg"
+  },
+  {
+    "name": "Lone Pine Sunset",
+    "author": "Romain Guy",
+    "photoUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/large/lone_pine_sunset.jpg",
+    "thumbnailUrl": "https://storage.googleapis.com/androiddevelopers/sample_data/activity_transition/thumbs/lone_pine_sunset.jpg"
+  }
+]
