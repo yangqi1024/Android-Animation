@@ -9,4 +9,5 @@
         <item name="android:windowSharedElementEnterTransition" >@transition/grid_detail_transition</item>
         <item name="android:windowSharedElementExitTransition" >@transition/grid_detail_transition</item>
     </style>
+    <style name="Theme.MotionActivity" parent="Theme.AppCompat.Light.NoActionBar"/>
 </resources>

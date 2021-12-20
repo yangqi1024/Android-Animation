@@ -13,8 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAnimation">
         <activity
+            android:name=".view.MotionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MotionActivity"
+            />
+        <activity
             android:name=".view.DetailActivity"
-            android:exported="false" />  <activity
+            android:exported="false" />
+        <activity
             android:name=".view.TransitionActivity"
             android:exported="false" />
         <activity

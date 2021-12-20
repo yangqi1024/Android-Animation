@@ -34,9 +34,11 @@ class MainAdapter(
         init {
             binding.clickListener = View.OnClickListener { view ->
                 binding.row?.let { row ->
-                    view.context.startActivity(Intent(view.context, row.activity))
+                    Intent(view.context, row.activity).apply {
+                        putExtra("layout_file_id", row.layout)
+                        view.context.startActivity(this)
+                    }
                 }
-
             }
         }
 
@@ -52,8 +54,14 @@ class MainAdapter(
     data class Row(
         val title: String,
         val description: String,
-        val activity: Class<*>
+        val activity: Class<*>,
+        val layout: Int = 0,
     ) {
-
+        constructor(title: String, description: String, activity: Class<*>) : this(
+            title,
+            description,
+            activity,
+            0,
+        )
     }
 }
