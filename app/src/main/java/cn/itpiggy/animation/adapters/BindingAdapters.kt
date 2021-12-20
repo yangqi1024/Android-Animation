@@ -11,6 +11,7 @@ fun bindImageFromUrl(view: ImageView, imageUrl: String?) {
         Glide.with(view.context)
             .load(imageUrl)
             .dontAnimate()
+            .placeholder(view.drawable)
             .into(view)
     }
 }
