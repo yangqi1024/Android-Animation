@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#444"
+        app:layoutDescription="@xml/scene_youtube">
+
+        <View
+            android:id="@+id/controller_view"
+            android:layout_width="0dp"
+            android:layout_height="320dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_complex_4_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/controller_view"
+            app:layout_constraintEnd_toEndOf="@+id/controller_view"
+            app:layout_constraintStart_toStartOf="@+id/controller_view"
+            app:layout_constraintTop_toTopOf="@+id/controller_view"
+            app:srcCompat="@drawable/sunset2" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/controller_view"
+            app:layout_constraintRight_toLeftOf="@+id/iv_clear"
+            app:layout_constraintTop_toTopOf="@+id/controller_view"
+            app:srcCompat="@drawable/ic_play_arrow_gray_32dp" />
+
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="@+id/controller_view"
+            app:layout_constraintRight_toRightOf="@+id/controller_view"
+            app:layout_constraintTop_toTopOf="@+id/controller_view"
+            app:srcCompat="@drawable/ic_clear_gray_32dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/controller_view"
+            app:layout_constraintStart_toStartOf="@+id/controller_view"
+            app:layout_constraintTop_toBottomOf="@+id/controller_view"
+            tools:listitem="@layout/layout_loading_card" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

@@ -19,7 +19,7 @@
         android:layout_margin="4dp"
         android:onClick="@{clickListener}">
 
-        <cn.itpiggy.animation.view.SquareFrameLayout
+        <cn.itpiggy.animation.ui.view.SquareFrameLayout
             android:id="@+id/square"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
                 android:contentDescription="@null"
                 android:scaleType="centerCrop"
                 app:imageFromUrl="@{data.thumbnailUrl}" />
-        </cn.itpiggy.animation.view.SquareFrameLayout>
+        </cn.itpiggy.animation.ui.view.SquareFrameLayout>
 
         <TextView
             android:id="@+id/tv_name"

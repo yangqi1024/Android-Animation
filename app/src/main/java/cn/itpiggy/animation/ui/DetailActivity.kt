@@ -1,4 +1,4 @@
-package cn.itpiggy.animation.view
+package cn.itpiggy.animation.ui
 
 import android.os.Bundle
 import android.transition.Transition

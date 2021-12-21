@@ -1,4 +1,4 @@
-package cn.itpiggy.animation.view
+package cn.itpiggy.animation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

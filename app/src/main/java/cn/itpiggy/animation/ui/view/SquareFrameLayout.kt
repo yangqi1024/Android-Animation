@@ -1,4 +1,4 @@
-package cn.itpiggy.animation.view
+package cn.itpiggy.animation.ui.view
 
 import android.content.Context
 import android.util.AttributeSet

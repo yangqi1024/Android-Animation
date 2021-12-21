@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import cn.itpiggy.animation.R
 import cn.itpiggy.animation.data.Item
 import cn.itpiggy.animation.databinding.LayoutActivitySceneTransitionItemBinding
-import cn.itpiggy.animation.view.ItemClickListener
+import cn.itpiggy.animation.ui.ItemClickListener
 
 class GridAdapter(val itemClickListener: ItemClickListener) :
     ListAdapter<Item, GridAdapter.ViewHolder>(GridDiffCallback()) {

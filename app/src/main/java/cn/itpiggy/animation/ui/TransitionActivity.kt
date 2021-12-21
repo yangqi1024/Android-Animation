@@ -1,10 +1,9 @@
-package cn.itpiggy.animation.view
+package cn.itpiggy.animation.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat
@@ -15,7 +14,6 @@ import cn.itpiggy.animation.R
 import cn.itpiggy.animation.activityscenetransitionbasic.GridAdapter
 import cn.itpiggy.animation.data.Item
 import cn.itpiggy.animation.viewmodels.GridViewModel
-import cn.itpiggy.animation.databinding.ActivityMainBinding
 import cn.itpiggy.animation.databinding.ActivityTransitionBinding
 import cn.itpiggy.animation.databinding.LayoutActivitySceneTransitionItemBinding
 import cn.itpiggy.animation.viewmodels.ItemDetailModel

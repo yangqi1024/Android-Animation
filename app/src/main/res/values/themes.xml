@@ -3,11 +3,18 @@
     <style name="Theme.AndroidAnimation" parent="Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         <!-- Status bar color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
         <item name="android:windowSharedElementEnterTransition" >@transition/grid_detail_transition</item>
         <item name="android:windowSharedElementExitTransition" >@transition/grid_detail_transition</item>
     </style>
-    <style name="Theme.MotionActivity" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Theme.MotionActivity" parent="Theme.AndroidAnimation">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
