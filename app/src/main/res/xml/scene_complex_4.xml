@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@+id/iv_complex_4_bg"
+            motion:touchAnchorSide="bottom" />
+
+        <KeyFrameSet>
+            <KeyAttribute
+                android:rotation="0"
+                motion:framePosition="1"
+                motion:motionTarget="@+id/iv_arrow" />
+            <KeyPosition
+                motion:framePosition="27"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/iv_arrow"
+                motion:percentX="-0.231"
+                motion:percentY="0.515" />
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/iv_complex_4_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/ib_complex_4_help"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:rotation="0"
+            motion:layout_constraintBottom_toBottomOf="@+id/ib_complex_4_help"
+            motion:layout_constraintEnd_toStartOf="@+id/ib_complex_4_help"
+            motion:layout_constraintTop_toTopOf="@+id/ib_complex_4_help" />
+
+        <Constraint
+            android:id="@+id/tv_complex_4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_complex_4_bg" />
+
+        <Constraint
+            android:id="@+id/tv_complex_4_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintStart_toStartOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_complex_4_title" />
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/iv_complex_4_bg"
+            android:layout_width="0dp"
+            android:layout_height="426dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/ib_complex_4_help"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_complex_4_bg" />
+
+        <Constraint
+            android:id="@+id/iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:rotation="90"
+            motion:layout_constraintBottom_toBottomOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@+id/tv_complex_4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:alpha="1"
+            motion:layout_constraintStart_toStartOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintTop_toBottomOf="@+id/iv_complex_4_bg" />
+
+        <Constraint
+            android:id="@+id/tv_complex_4_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="1"
+            motion:layout_constraintEnd_toEndOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintStart_toStartOf="@+id/iv_complex_4_bg"
+            motion:layout_constraintTop_toBottomOf="@+id/tv_complex_4_title" />
+    </ConstraintSet>
+</MotionScene>

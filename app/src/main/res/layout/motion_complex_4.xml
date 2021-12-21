@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene_complex_4">
+
+    <ImageView
+        android:id="@+id/iv_complex_4_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sunset2"
+        app:srcCompat="@drawable/sunset2" />
+
+    <TextView
+        android:id="@+id/tv_complex_4_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem" />
+
+
+    <ImageButton
+        android:id="@+id/ib_complex_4_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wcircle"
+        android:tint="#3d76df"
+        app:srcCompat="@drawable/ic_info_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_complex_4_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informations"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="0"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <cn.itpiggy.animation.helpers.FlyingBounceHelper
+        android:id="@+id/helper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="iv_arrow" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

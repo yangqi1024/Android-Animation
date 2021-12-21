@@ -27,6 +27,25 @@ class MainActivity : AppCompatActivity() {
             MotionActivity::class.java,
             R.layout.motion_complex_1
         ),
+        MainAdapter.Row(
+            "复杂运动示例 (2/4)",
+            "类似 CoordinatorLayout 的高级行为（添加FAB）。 仅使用 MotionLayout 实现，使用移动指南。 请注意，视图未调整大小。 ",
+            MotionActivity::class.java,
+            R.layout.motion_complex_2
+        ),
+
+        MainAdapter.Row(
+            "复杂运动示例 (3/4)",
+            "类似 CoordinatorLayout 的高级行为（添加FAB。 仅使用 MotionLayout 实现，使用视图的直接调整大小。 ",
+            MotionActivity::class.java,
+            R.layout.motion_complex_3
+        ),
+        MainAdapter.Row(
+            "复杂运动示例 (4/4)",
+            "高级同步 reval 运动 + 助手（弹跳）。 仅使用 MotionLayout 实现。",
+            MotionActivity::class.java,
+            R.layout.motion_complex_4
+        ),
 
         )
 
@@ -36,7 +55,12 @@ class MainActivity : AppCompatActivity() {
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
                 .apply {
                     recyclerView.adapter = MainAdapter(dataset)
-                    recyclerView.addItemDecoration(DividerItemDecoration(applicationContext,LinearLayoutManager.VERTICAL))
+                    recyclerView.addItemDecoration(
+                        DividerItemDecoration(
+                            applicationContext,
+                            LinearLayoutManager.VERTICAL
+                        )
+                    )
                 }
     }
 
