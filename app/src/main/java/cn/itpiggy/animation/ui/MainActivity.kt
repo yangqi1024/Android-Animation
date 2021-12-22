@@ -44,13 +44,18 @@ class MainActivity : AppCompatActivity() {
             "高级同步 reval 运动 + 助手（弹跳）。 仅使用 MotionLayout 实现。",
             MotionActivity::class.java,
             R.layout.motion_complex_4
-        ),    MainAdapter.Row(
+        ),
+        MainAdapter.Row(
             "YouTube 示例",
             "展示YouTube 过渡示例。",
             YouTubeActivity::class.java
         ),
-
-        )
+        MainAdapter.Row(
+            "MealMonkey Login 示例",
+            "MealMonkey 登录页示例。",
+            MealMonkeyActivity::class.java,
+        ),
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
