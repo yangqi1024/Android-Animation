@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAnimation">
         <activity
+            android:name=".ui.ViewPagerMotionActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MotionActivity" />
+        <activity
             android:name=".ui.MealMonkeyActivity"
             android:exported="false"
             android:theme="@style/Theme.MotionActivity" />

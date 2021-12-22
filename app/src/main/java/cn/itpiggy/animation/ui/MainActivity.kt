@@ -55,6 +55,11 @@ class MainActivity : AppCompatActivity() {
             "MealMonkey 登录页示例。",
             MealMonkeyActivity::class.java,
         ),
+        MainAdapter.Row(
+            "ViewPager 联动示例",
+            "ViewPager 和MotionLayout 联动示例。",
+            ViewPagerMotionActivity::class.java,
+        ),
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="25"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/tv_ship_emoji"
+                motion:percentY="0.6" />
+            <KeyAttribute
+                android:rotation="22"
+                motion:framePosition="10"
+                motion:motionTarget="@+id/tv_ship_emoji" />
+            <KeyAttribute
+                android:rotation="40"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/tv_ship_emoji" />
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/tv_ship_emoji"
+                motion:percentY="0.8" />
+
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="deltaRelative"
+                motion:motionTarget="@+id/iv_background"
+                motion:percentY="0.05" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start"></ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/tv_ship_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="-20"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.93"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintVertical_bias="0.3" />
+        <Constraint
+            android:id="@+id/iv_background"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>
